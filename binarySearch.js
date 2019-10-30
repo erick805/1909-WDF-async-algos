@@ -3,7 +3,9 @@ Binary Search
 
 Write a function that implements binary search.
 Problem
-Given a sorted array of numbers, locate the index of a specified value according to the following algorithm.First identify the middle number in the array.Next determine if the value to be found is greater than, lower than, or equal to the middle number.If it is equal, you are finished, and output the index of the found value.If not, repeat the procedure for a smaller array, formed from by taking half of the given array that the specified number falls into.
+Given a sorted array of numbers, locate the index of a specified value according to the following algorithm. If value is not found, return -1.
+
+First identify the middle number in the array.Next determine if the value to be found is greater than, lower than, or equal to the middle number.If it is equal, you are finished, and output the index of the found value.If not, repeat the procedure for a smaller array, formed from by taking half of the given array that the specified number falls into.
 
 THIS IS AN EXAMPLE FOR THE INTERVIEWER.  HAVE YOUR CANDIDATE COME UP WITH THEIR OWN EXAMPLE!
 Example
