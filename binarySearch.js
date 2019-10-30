@@ -58,6 +58,8 @@ function binarySearch(arr, target) {
   return arr[mid] !== target ? -1 : mid;
 }
 
+console.log(binarySearch([], 2)); // => -1
+console.log(binarySearch([-2], -2)); // => 0
 console.log(binarySearch([1, 2, 5, 7, 8, 9], 2)); // => 1
 console.log(binarySearch([1, 2, 5, 7, 8, 9], 8)); // => 4
 console.log(binarySearch([1, 2, 5, 7, 8, 9], 9)); // => 5
