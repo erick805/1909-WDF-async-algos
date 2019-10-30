@@ -8,6 +8,8 @@ Given a sorted array of numbers, locate the index of a specified value according
 THIS IS AN EXAMPLE FOR THE INTERVIEWER.  HAVE YOUR CANDIDATE COME UP WITH THEIR OWN EXAMPLE!
 Example
 Consider the array[1, 3, 4, 7, 12, 17, 20].We want to locate the index of 17. First compare 17 to the middle of the array, which is 7. Because 17 > 7 we then repeat the comparison using the subarray[12, 17, 20].We find that 17 matches the middle of this array, and so we output the index from the original array, which is 5. Note that we do not output the index of 17 from the smaller subarray.
+
+Input = (sortedArrOfIntegers, target) Output = index
 */
 
 // SOLUTION 1 - recursive - *works with strings
