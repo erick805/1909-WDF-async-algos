@@ -21,13 +21,15 @@ An empty input string or a string without brackets can also be considered "balan
 ```
 # Approach
 
-Store a dictionary of matching brackets
+Store a dictionary of matching brackets. (constant time)
 
 I want to use a data structure that stores the most recent opening bracket. - A STACK
 
-Check if most recent opening bracket in stack is a match for most recent closing bracket in string.
+Loop through our string, if our current element is a opening bracket push into our stack.
 
-If our stack is empty, we matched all the brackets in the correct order! - return true, if length === 0
+Else check if it is a closing bracket, if it is make a comparison with most recent popped bracket in stack, if it is NOT a match - Return FALSE because we know they are not matching.
+
+In the end if our stack is empty, we matched all the brackets in the correct order! - return true, if stack.length === 0
 
 # Code
 ```js
