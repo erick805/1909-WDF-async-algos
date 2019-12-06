@@ -24,8 +24,11 @@ An empty input string or a string without brackets can also be considered "balan
 # Approach
 
 Store a dictionary of matching brackets
+
 I want to use a data structure that stores the most recent opening bracket. - A STACK
+
 Check if most recent opening bracket in stack is a match for most recent closing bracket in string.
+
 If our stack is empty, we matched all the brackets in the correct order! - return true, if length === 0
 
 # Code
