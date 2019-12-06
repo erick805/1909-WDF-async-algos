@@ -6,8 +6,6 @@ You are given an input string consisting of brackets—square `[ ]`, round `( )`
 
 An empty input string or a string without brackets can also be considered "balanced".
 
-//Input (str) Output boolean
-
 # Examples
 
 ```js
