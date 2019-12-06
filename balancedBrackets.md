@@ -1,15 +1,16 @@
-// Write a function that takes in a string made up of brackets
-// ("(", "[", "{") and other optional characters.  The function should
-// return a boolean representing whether or not the string is balanced
-// in regards to brackets.  A string is said to be balanced if it has as many
-// opening brackets of a given type as it has closing brackets of that type
-// and if no bracket is unmatched.  Note that a closing bracket cannot
-// match a corresponding opening bracket that comes after it.  Similarly,
-// brackets cannot overlap each other as in '[(])'
+# Prompt
+
+Write a function that determines whether an input string has balanced brackets.
+
+You are given an input string consisting of brackets—square `[ ]`, round `( )`, and curly `{ }`. The input string can include other text. Write a function that returns either `true` if the brackets in the input string are balanced or `false` if they are not. Balanced means that any opening bracket of a particular type must also have a closing bracket of the same type.
+
+An empty input string or a string without brackets can also be considered "balanced".
 
 //Input (str) Output boolean
 
-// Edge Cases
+# Examples
+
+```js
 // ("") => return false
 // ("[") => return false
 // ("()") => return true
@@ -30,6 +31,7 @@
 
 // Space Complexity
 // O(n)
+
 function balancedBrackets(str) {
   if (str.length < 2) return false;
   const matchingBrackets = {
@@ -52,13 +54,4 @@ function balancedBrackets(str) {
   }
   return stack.length === 0;
 }
-
-console.log(balancedBrackets(""));
-console.log(balancedBrackets("["));
-console.log(balancedBrackets("()"));
-console.log(balancedBrackets("a"));
-console.log(balancedBrackets("{a}"));
-console.log(balancedBrackets("[(])"));
-console.log(balancedBrackets("[]()"));
-console.log(balancedBrackets("[({})]"));
-console.log(balancedBrackets("[({})"));
+```
